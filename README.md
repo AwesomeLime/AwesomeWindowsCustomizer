@@ -1,7 +1,7 @@
 [![](https://github.com/AwesomeLime/AwesomeWindowsCustomizer/blob/main/.github/Pic/awc%20black%20outline.png?raw=true)](https://github.com/AwesomeLime/AwesomeWindowsCustomizer/releases)
 
 ### RU: Небольшая программа с открытым исходным кодом, которая позволяет настроить Windows под себя её же стандартными средствами!
-###EN: A small open source program, which allows you to customize Windows for yourself its standard tools!
+### EN: A small open source program, which allows you to customize Windows for yourself its standard tools!
 
 # RU
 ## Системные требования
