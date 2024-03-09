@@ -1,0 +1,14 @@
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Yet another Windows tweaker.csproj.AssemblyReference.cache
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Yet another Windows tweaker.csproj.GenerateResource.cache
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Yet another Windows tweaker.csproj.CoreCompileInputs.cache
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\bin\Debug\AWC Beta.exe.config
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\bin\Debug\AWC Beta.exe
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\bin\Debug\AWC Beta.pdb
+D:\Visual Studio\AWC\Debug\AWC Release Preview.exe.config
+D:\Visual Studio\AWC\Debug\AWC Release Preview.exe
+D:\Visual Studio\AWC\Debug\AWC Release Preview.pdb
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC Release Preview.exe
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC Release Preview.pdb
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Form1.resources
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Form2.resources
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Properties.Resources.resources

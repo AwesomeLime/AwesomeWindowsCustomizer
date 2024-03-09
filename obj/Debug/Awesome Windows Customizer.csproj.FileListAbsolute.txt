@@ -1,0 +1,11 @@
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.csproj.AssemblyReference.cache
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Form1.resources
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Form2.resources
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\AWC.Properties.Resources.resources
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.csproj.GenerateResource.cache
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.csproj.CoreCompileInputs.cache
+D:\Visual Studio\AWC\Debug\Awesome Windows Customizer.exe.config
+D:\Visual Studio\AWC\Debug\Awesome Windows Customizer.exe
+D:\Visual Studio\AWC\Debug\Awesome Windows Customizer.pdb
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.exe
+C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.pdb
