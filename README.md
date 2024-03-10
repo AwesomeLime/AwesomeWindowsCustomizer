@@ -22,11 +22,11 @@
 	- **Прочее** - настройка прочих функций
 	- **Активация** - позволяет активировать Windows и Office 2021
 	- **Контекстное меню** - настройка контекстного меню
-	- **Настройки программы** - настройка темы, языка (пока только русский) и сброс всех настроек программы
+	- **Настройки программы** - настройка темы, языка (русский и английский) и сброс всех настроек программы
 	- **О программе** - :)
 - ### Awesome Windows Customizer использует ТОЛЬКО реестр и встроенный инструментарий Windows - slmgr, powercfg, cmd и др.
 
-# EN (English language is not added in app yet!!!)
+# EN
 ## System requirements
 - #### Windows 10 1607 and higher x64
 - .Net Framework 4.7.2
@@ -45,6 +45,6 @@
 - **Other** - setting up other functions
 - **Activation** - allows you to activate Windows and Office 2021
 - **Context menu** - setting up the context menu
-- **App settings** - setting the theme, language (only Russian for now) and resetting all program settings
+- **App settings** - setting the theme, language (Russian & English) and resetting all program settings
 - **About** - :)
 - ### Awesome Windows Customizer uses ONLY the registry and built-in Windows tools - slmgr, powercfg, cmd, etc.
