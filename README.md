@@ -26,9 +26,6 @@
 	- **О программе** - :)
 - ### Awesome Windows Customizer использует ТОЛЬКО реестр и встроенный инструментарий Windows - slmgr, powercfg, cmd и др.
 
-## TODO
-- #### Добавить перевод на английский язык
-
 # EN (English language is not added in app yet!!!)
 ## System requirements
 - #### Windows 10 1607 and higher x64
@@ -51,6 +48,3 @@
 - **App settings** - setting the theme, language (only Russian for now) and resetting all program settings
 - **About** - :)
 - ### Awesome Windows Customizer uses ONLY the registry and built-in Windows tools - slmgr, powercfg, cmd, etc.
-
-## TODO
-- #### Add English translation
