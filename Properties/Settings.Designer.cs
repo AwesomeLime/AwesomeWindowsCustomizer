@@ -802,5 +802,17 @@ namespace AWC.Properties {
                 this["NeedExpReboot"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int Lang {
+            get {
+                return ((int)(this["Lang"]));
+            }
+            set {
+                this["Lang"] = value;
+            }
+        }
     }
 }
