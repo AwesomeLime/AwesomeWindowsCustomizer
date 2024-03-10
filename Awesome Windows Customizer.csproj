@@ -169,6 +169,21 @@
     <None Include="Resources\githubr1.png" />
     <None Include="Resources\pngwing.com.png" />
     <None Include="Resources\CoolSound.wav" />
+    <None Include="Resources\yellow.png" />
+    <None Include="Resources\blue.png" />
+    <None Include="Resources\green.png" />
+    <None Include="Resources\orange.png" />
+    <None Include="Resources\red.png" />
+    <None Include="Resources\violet.png" />
+    <None Include="Resources\Union.png" />
+    <None Include="Resources\Union-1.png" />
+    <None Include="Resources\Union-2.png" />
+    <None Include="Resources\Union-3.png" />
+    <None Include="Resources\Union-4.png" />
+    <None Include="Resources\Union-5.png" />
+    <None Include="Resources\awcrainbow.png" />
+    <None Include="Resources\awcwhite.png" />
+    <None Include="Resources\awcBLACK.png" />
     <Content Include="tweaker-lol %281%29.ico" />
     <Content Include="Union %281%29.ico" />
     <None Include="Resources\Union1.png" />
@@ -184,7 +199,6 @@
     <None Include="Resources\Group 11.png" />
     <None Include="Resources\Frame 1.png" />
     <None Include="Resources\Fram2e 1.png" />
-    <None Include="Resources\Union.png" />
     <Content Include="Trash Full.ico" />
   </ItemGroup>
   <ItemGroup>

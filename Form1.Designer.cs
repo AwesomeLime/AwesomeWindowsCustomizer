@@ -748,7 +748,13 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Rainbow (по умолчанию)",
-            "Чернобелая"});
+            "Черно-белая",
+            "Красная",
+            "Оранжевая",
+            "Жёлтая",
+            "Зелёная",
+            "Синяя",
+            "Фиолетовая"});
             this.comboBox1.Location = new System.Drawing.Point(24, 99);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(180, 21);
@@ -780,7 +786,8 @@
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Русский (Ru)"});
+            "Русский (Ru)",
+            "English (En)"});
             this.comboBox2.Location = new System.Drawing.Point(26, 167);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(180, 21);
@@ -851,11 +858,11 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label13.Location = new System.Drawing.Point(235, 365);
+            this.label13.Location = new System.Drawing.Point(251, 365);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(329, 64);
+            this.label13.Size = new System.Drawing.Size(313, 64);
             this.label13.TabIndex = 44;
-            this.label13.Text = "Номер сборки: 400.awcrelease\r\nAwesomeLime // 2024\r\n";
+            this.label13.Text = "Build number: 500.awcrelease\r\nAwesomeLime // 2024\r\n";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
@@ -867,6 +874,8 @@
             this.BackgroundImage = global::AWC.Properties.Resources.Fram2e_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.explorerReq);
             this.Controls.Add(this.restartReq);
             this.Controls.Add(this.button12);
@@ -874,7 +883,6 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.checkBox13);
             this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.checkBox12);
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox10);
@@ -883,33 +891,32 @@
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button14);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button13);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
