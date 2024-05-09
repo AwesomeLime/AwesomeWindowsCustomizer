@@ -42,7 +42,7 @@ namespace AWC
                 else if (currentCulture.Name.StartsWith("uz"))
                 {
                     Properties.Settings.Default.Lang = 1;
-                    Properties.Settings.Default.Save();;
+                    Properties.Settings.Default.Save(); ;
                 }
                 else if (currentCulture.Name.StartsWith("kk"))
                 {
@@ -108,6 +108,7 @@ namespace AWC
             }
             Properties.Settings.Default.NeedExpReboot = false;
             Properties.Settings.Default.NeedReboot = false;
+            button12.Visible = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             if (Properties.Settings.Default.Lang == 1)
@@ -142,7 +143,7 @@ namespace AWC
                     }
                     if (int.TryParse(build, out int buildNumber) && buildNumber < 14393)
                     {
-                        if(Properties.Settings.Default.Lang == 1)
+                        if (Properties.Settings.Default.Lang == 1)
                         {
                             MessageBox.Show("Ваша версия Windows не поддерживается. Для использования Awesome Windows Customizer, необходима Windows 10 1607 или новее.", "AWC - Неподдерживаемая система", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
@@ -152,17 +153,17 @@ namespace AWC
                         }
                         Environment.Exit(0);
                     }
-                    if(Properties.Settings.Default.Lang == 1)
+                    if (Properties.Settings.Default.Lang == 1)
                     {
                         label2.Text = $"ОС - {osname}\r\nНомер сборки - {build}\r\nРазрядность системы - {osarch}\r\nПапка установки - {windir}\r\nИмя компьютера - {pcname}\r\nИмя пользователя - {logname}\r\n\r\n\n\n\n\nСовет: чтобы посмотреть информацию о настройке, \nнажмите по ней правой кнопкой мыши.";
                     }
-                    else if(Properties.Settings.Default.Lang == 2)
+                    else if (Properties.Settings.Default.Lang == 2)
                     {
                         label2.Text = $"OS - {osname}\r\nBuild number - {build}\r\nSystem architecture - {osarch}\r\nWindows folder - {windir}\r\nComputer name - {pcname}\r\nUsername - {logname}\r\n\r\n\n\n\n\n\nTip: to view information about setting, right-click on it.";
                     }
                 }
 
-                
+
             }
             catch
             {
@@ -179,11 +180,11 @@ namespace AWC
             if (Properties.Settings.Default.Theme == 1)
             {
                 comboBox1.SelectedIndex = 0;
-            }    
+            }
             else if (Properties.Settings.Default.Theme == 2)
             {
                 comboBox1.SelectedIndex = 1;
-            }    
+            }
             button1.Enabled = true;
             if (Properties.Settings.Default.CatAboutPC == true)
             {
@@ -206,8 +207,9 @@ namespace AWC
                 button16.Visible = false;
                 button17.Visible = false;
                 button18.Visible = false;
+                pictureBox4.Visible = false;
             }
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 // Создаем объект Random
                 Random random = new Random();
@@ -263,8 +265,8 @@ namespace AWC
             else if (Properties.Settings.Default.Lang == 2)
             {
                 label1.Text = "Thank you for using! :)";
-            }    
-            
+            }
+
 
             Properties.Settings.Default.FirstRun = false;
 
@@ -287,7 +289,7 @@ namespace AWC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 label1.Text = "Об устройстве";
                 try
@@ -354,6 +356,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             button1.Enabled = false;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -376,10 +379,15 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
         }
@@ -403,6 +411,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -430,10 +439,15 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
             if (Properties.Settings.Default.CBR1 == true)
@@ -539,6 +553,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -566,10 +581,15 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
             if (Properties.Settings.Default.CBE1 == true)
@@ -639,6 +659,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -666,9 +687,14 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
+            pictureBox4.Visible = false;
             pictureBox3.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
@@ -784,6 +810,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -811,10 +838,15 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
             if (Properties.Settings.Default.CBET1 == true)
@@ -946,6 +978,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = true;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -973,10 +1006,15 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
             if (Properties.Settings.Default.CB1 == true)
@@ -1119,6 +1157,9 @@ namespace AWC
                 button16.Text = "Активировать";
                 button17.Text = "Активировать";
                 button18.Text = "Активировать";
+                label3.Text = "Windows 10/11 Pro";
+                label4.Text = "Windows 10/11 Home";
+                label5.Text = "Windws 10/11 Enterprise";
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
@@ -1129,6 +1170,9 @@ namespace AWC
                 button16.Text = "Activate      ";
                 button17.Text = "Activate      ";
                 button18.Text = "Activate      ";
+                label3.Text = "Windows 10/11 Pro";
+                label4.Text = "Windows 10/11 Home";
+                label5.Text = "Windws 10/11 Enterprise";
             }
             Properties.Settings.Default.CatAboutPC = false;
             Properties.Settings.Default.CatExp = false;
@@ -1139,6 +1183,7 @@ namespace AWC
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
             Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = false;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
             button19.Visible = false;
@@ -1166,10 +1211,15 @@ namespace AWC
             button16.Visible = true;
             button17.Visible = true;
             button18.Visible = true;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             comboBox1.Visible = false;
             label9.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
             if (Properties.Settings.Default.ActFirstTime == true)
@@ -1189,19 +1239,20 @@ namespace AWC
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 label1.Text = "Настройки программы";
                 label9.Text = "Тема";
                 label10.Text = "Язык // Language";
                 button19.Text = "Сбросить все настройки";
+                checkBox7.Text = "Скрыть напоминание о необходимости перезагрузки";
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
                 label1.Text = "App settings";
                 label9.Text = "Theme";
                 label10.Text = "Language // Язык";
-                button19.Text = "Reset all settings";
+                checkBox7.Text = "Hide the reminder to reboot";
             }
             Properties.Settings.Default.CatAboutPC = false;
             Properties.Settings.Default.CatExp = false;
@@ -1211,6 +1262,7 @@ namespace AWC
             Properties.Settings.Default.CatAct = false;
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = true;
+            Properties.Settings.Default.CatRec = false;
             Properties.Settings.Default.CatAbout = false;
             button1.Enabled = true;
             button2.Enabled = true;
@@ -1235,10 +1287,14 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             checkBox2.Visible = false;
             checkBox3.Visible = false;
             checkBox4.Visible = false;
-            checkBox7.Visible = false;
+            checkBox7.Visible = true;
             checkBox6.Visible = false;
             checkBox5.Visible = false;
             checkBox10.Visible = false;
@@ -1256,24 +1312,33 @@ namespace AWC
             button19.Visible = true;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             label11.Visible = false;
             label13.Visible = false;
+            if(Properties.Settings.Default.CBS == true)
+            {
+                checkBox7.Checked = true;
+            }
+            else if (Properties.Settings.Default.CBS == false)
+            {
+                checkBox7.Checked = false;
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 label1.Text = "О программе";
                 label11.Text = "Небольшая программа с открытым исходным кодом, \r\nкоторая позволяет настроить Windows под себя\r\nеё же стандартными средствами!\r\n";
-                label13.Text = "Версия 1.1 Release\nAwesomeLime // 2024";
+                label13.Text = "Версия 1.2 Release\nAwesomeLime // 2024";
 
             }
             if (Properties.Settings.Default.Lang == 2)
             {
                 label1.Text = "About";
                 label11.Text = "A small open source program, which allows you to \ncustomize Windows for yourself its standard tools!";
-                label13.Text = "Version 1.1 Release\nAwesomeLime // 2024";
+                label13.Text = "Version 1.2 Release\nAwesomeLime // 2024";
 
             }
             Point newLocation = new Point(326, 365);
@@ -1285,6 +1350,7 @@ namespace AWC
             Properties.Settings.Default.CatAct = false;
             Properties.Settings.Default.CatContext = false;
             Properties.Settings.Default.CatSet = false;
+            Properties.Settings.Default.CatRec = false;
             Properties.Settings.Default.CatAbout = true;
             comboBox1.Visible = false;
             comboBox2.Visible = false;
@@ -1314,6 +1380,10 @@ namespace AWC
             button16.Visible = false;
             button17.Visible = false;
             button18.Visible = false;
+            button21.Visible = false;
+            button22.Visible = false;
+            button23.Visible = false;
+            button20.Enabled = true;
             checkBox2.Visible = false;
             checkBox3.Visible = false;
             checkBox4.Visible = false;
@@ -1332,6 +1402,7 @@ namespace AWC
             label9.Visible = false;
             pictureBox2.Visible = true;
             pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
             label11.Visible = true;
             label13.Visible = true;
             label13.Location = newLocation;
@@ -1340,32 +1411,6 @@ namespace AWC
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.Lang == 1)
-            {
-                button1.Text = "Об устройстве";
-
-            }
-            else if (Properties.Settings.Default.Lang == 2)
-            {
-                button1.Text = "About device   ";
-                
-            }    
-            if (Properties.Settings.Default.NeedReboot == true)
-            {
-                restartReq.Visible = true;
-            }    
-            if(Properties.Settings.Default.NeedExpReboot == true)
-            {
-                explorerReq.Visible = true;
-            }
-            if(Properties.Settings.Default.NeedExpReboot == false)
-            {
-                explorerReq.Visible = false;
-            }
-            if(Properties.Settings.Default.NeedReboot == false)
-            {
-                restartReq.Visible = false;
-            }
             if (Properties.Settings.Default.CatAboutPC == true)
             {
                 checkBox1.Visible = false;
@@ -1383,6 +1428,9 @@ namespace AWC
                 checkBox13.Visible = false;
                 checkBox14.Visible = false;
                 button12.Visible = false;
+                comboBox2.Visible = false;
+                button19.Visible = false;
+                label10.Visible = false;
             }
             if (Properties.Settings.Default.CatExp == true)
             {
@@ -1400,7 +1448,7 @@ namespace AWC
                 checkBox12.Visible = false;
                 checkBox13.Visible = false;
                 checkBox14.Visible = false;
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     checkBox1.Text = "Скрыть неудаляемые папки библиотек";
                     checkBox2.Text = "Показать скрытые файлы и папки";
@@ -1439,7 +1487,7 @@ namespace AWC
                 checkBox12.Visible = false;
                 checkBox13.Visible = false;
                 checkBox14.Visible = false;
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     checkBox1.Text = "Минимальное кол-во рекомендаций в Пуске";
                     checkBox2.Text = "Отключить живые плитки в Пуске";
@@ -1451,7 +1499,7 @@ namespace AWC
                     checkBox8.Text = "Уменьшить время появления миниатюр";
                     checkBox9.Text = "Отключить новое контекстное меню из Windows 11";
                 }
-                else if(Properties.Settings.Default.Lang == 2)
+                else if (Properties.Settings.Default.Lang == 2)
                 {
                     checkBox1.Text = "Minimum number of recommendations in Start";
                     checkBox2.Text = "Disable live tiles in Start";
@@ -1462,7 +1510,7 @@ namespace AWC
                     checkBox7.Text = "Huge program thumbnails on the taskbar";
                     checkBox8.Text = "Reduce thumbnail appearance time";
                     checkBox9.Text = "Disable the new Windows 11 context menu";
-                }    
+                }
                 button12.Visible = false;
                 checkBox2.Enabled = true;
                 checkBox5.Enabled = true;
@@ -1486,7 +1534,7 @@ namespace AWC
                 checkBox12.Visible = false;
                 checkBox13.Visible = false;
                 checkBox14.Visible = false;
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     checkBox1.Text = "Отключить Центр обновления Windows";
                     checkBox2.Text = "Отключить обновление до новой версии Windows";
@@ -1499,7 +1547,7 @@ namespace AWC
                     checkBox9.Text = "Отключить Брандмауэр";
                     checkBox10.Text = "Отключить автоустановку рекламных приложений";
                 }
-                else if(Properties.Settings.Default.Lang == 2)
+                else if (Properties.Settings.Default.Lang == 2)
                 {
                     checkBox1.Text = "Disable Windows Update";
                     checkBox2.Text = "Disable updating to a new version of Windows";
@@ -1549,7 +1597,7 @@ namespace AWC
                     checkBox11.Text = "Включить максимальную производительность";
                     checkBox12.Text = "Выключить затухание экрана при бездействии";
                 }
-                else if(Properties.Settings.Default.Lang == 2)
+                else if (Properties.Settings.Default.Lang == 2)
                 {
                     checkBox1.Text = "Show shutdown details";
                     checkBox2.Text = "Disable background blur on the lock screen";
@@ -1587,7 +1635,7 @@ namespace AWC
                 checkBox12.Visible = true;
                 checkBox13.Visible = true;
                 checkBox14.Visible = true;
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     checkBox1.Text = "Печать";
                     checkBox2.Text = "Открыть в Терминале";
@@ -1623,7 +1671,7 @@ namespace AWC
                 }
                 button12.Visible = true;
                 checkBox10.Enabled = true;
-                
+
 
             }
             if (Properties.Settings.Default.CatAct == true)
@@ -1644,8 +1692,36 @@ namespace AWC
                 checkBox14.Visible = false;
                 button12.Visible = true;
             }
-
-
+            if (Properties.Settings.Default.CatRec == true)
+            {
+                checkBox1.Visible = false;
+                checkBox2.Visible = false;
+                checkBox3.Visible = false;
+                checkBox4.Visible = false;
+                checkBox5.Visible = false;
+                checkBox6.Visible = false;
+                checkBox7.Visible = false;
+                checkBox8.Visible = false;
+                checkBox9.Visible = false;
+                checkBox10.Visible = false;
+                checkBox11.Visible = false;
+                checkBox12.Visible = false;
+                checkBox13.Visible = false;
+                checkBox14.Visible = false;
+                button12.Visible = true;
+            }
+            if(Properties.Settings.Default.RebootEnabled == true && Properties.Settings.Default.CBS == false)
+            {
+                Reboot.Enabled = true;
+                Reboot.Start();
+            }
+            if (Properties.Settings.Default.RebootEnabled == false && Properties.Settings.Default.CBS == true)
+            {
+                Reboot.Stop();
+                Reboot.Enabled = false;
+                Properties.Settings.Default.NeedExpReboot = false;
+                Properties.Settings.Default.NeedReboot = false;
+            }
 
         }
 
@@ -1656,8 +1732,9 @@ namespace AWC
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
+                toolTip1.SetToolTip(button1, "Об устройстве");
                 toolTip1.SetToolTip(button2, "Проводник");
                 toolTip1.SetToolTip(button3, "Рабочее окружение");
                 toolTip1.SetToolTip(button4, "Прочее");
@@ -1672,9 +1749,11 @@ namespace AWC
                 toolTip1.SetToolTip(explorerReq, "Требуется перезагрузка Проводника!");
                 toolTip1.SetToolTip(restartReq, "Требуется перезагрузка!");
                 toolTip1.SetToolTip(button12, "Информация о категории");
+                toolTip1.SetToolTip(button20, "Очистка и восстановление");
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
+                toolTip1.SetToolTip(button1, "About device");
                 toolTip1.SetToolTip(button2, "Explorer");
                 toolTip1.SetToolTip(button3, "Enviroment");
                 toolTip1.SetToolTip(button4, "Other");
@@ -1689,8 +1768,9 @@ namespace AWC
                 toolTip1.SetToolTip(explorerReq, "Explorer restart required!");
                 toolTip1.SetToolTip(restartReq, "Reboot required!");
                 toolTip1.SetToolTip(button12, "Category information");
+                toolTip1.SetToolTip(button20, "System refresh");
             }
-            
+
 
         }
 
@@ -1834,7 +1914,7 @@ namespace AWC
                 {
                     Properties.Settings.Default.CBE3 = true;
                     Properties.Settings.Default.Save();
-                    if(Properties.Settings.Default.Lang == 1)
+                    if (Properties.Settings.Default.Lang == 1)
                     {
                         DialogResult shResult = MessageBox.Show("Не рекомендуется включать данный параметр, так как из-за него вы можете повредить важные для системы файлы.\nЕсли вы хотите, чтобы у вас отображались такие папки как 'AppData' и т. п., вам необходимо включить параметр 'Показать скрытые файлы и папки'.\n\nВы точно хотите применить данный параметр? Применяйте данный параметр на свой страх и риск.", "Awesome Windows Customizer - Предупреждение!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                         if (shResult == DialogResult.Yes)
@@ -1930,7 +2010,7 @@ namespace AWC
                     {
 
                     }
-                    
+
                 }
                 else if (checkBox3.Checked == false)
                 {
@@ -2324,14 +2404,36 @@ namespace AWC
                     checkBox2.Enabled = true;
                     try
                     {
-                      Registry.LocalMachine.DeleteSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked");
+                        Registry.LocalMachine.DeleteSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked");
                     }
                     catch
                     {
 
                     }
+                    
+
                 }
             }
+            if (Properties.Settings.Default.CatSet == true)
+            {
+                if (checkBox7.Checked == true)
+                {
+                    Properties.Settings.Default.CBS = true;
+                    Properties.Settings.Default.RebootEnabled = false;
+                    Reboot.Stop();
+                    Reboot.Enabled = false;
+                    restartReq.Visible = false;
+                    explorerReq.Visible = false;
+                    Properties.Settings.Default.Save();
+                }
+                else if (checkBox7.Checked == false)
+                {
+                    Properties.Settings.Default.CBS = false;
+                    Properties.Settings.Default.RebootEnabled = true;
+                    Properties.Settings.Default.Save();
+                }
+            }
+
         }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
@@ -2472,7 +2574,7 @@ namespace AWC
                     {
 
                     }
-                    
+
                 }
                 else if (checkBox9.Checked == false)
                 {
@@ -2502,7 +2604,7 @@ namespace AWC
                 {
                     Properties.Settings.Default.CBU10 = false;
                     Properties.Settings.Default.Save();
-                }    
+                }
             }
             else if (Properties.Settings.Default.CatEtc == true)
             {
@@ -2511,7 +2613,7 @@ namespace AWC
                     Properties.Settings.Default.CBET10 = true;
                     Properties.Settings.Default.Save();
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MultitaskingView\AltTabViewHost").SetValue("BackgroundDimmingLayer_percent", (int)70);
-                    
+
                 }
                 else if (checkBox10.Checked == false)
                 {
@@ -2623,13 +2725,13 @@ namespace AWC
                 {
                     Properties.Settings.Default.CB12 = false;
                     Properties.Settings.Default.Save();
-                }    
+                }
             }
-        }   
+        }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 DialogResult ExpReboot = MessageBox.Show("Вы точно хотите перезапустить компьютер?", "Awesome Windows Customizer - Уверены?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (ExpReboot == DialogResult.Yes)
@@ -2687,7 +2789,7 @@ namespace AWC
                     {
 
                     }
-                    
+
 
 
                 }
@@ -2751,7 +2853,7 @@ namespace AWC
                 {
                     Properties.Settings.Default.CBU1 = true;
                     Properties.Settings.Default.Save();
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU").SetValue("NoAutoUpdate", 1); 
+                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU").SetValue("NoAutoUpdate", 1);
                     Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("DoNotConnectToWindowsUpdateInternetLocations", 1);
                 }
                 else if (checkBox1.Checked == false)
@@ -2793,7 +2895,7 @@ namespace AWC
                     Registry.ClassesRoot.CreateSubKey(@"regfile\shell\print").SetValue("ProgrammaticAccessOnly", "");
                     Registry.ClassesRoot.CreateSubKey(@"txtfile\shell\print").SetValue("ProgrammaticAccessOnly", "");
                     Registry.ClassesRoot.CreateSubKey(@"VBSFile\shell\print").SetValue("ProgrammaticAccessOnly", "");
-                       
+
 
                 }
                 else if (checkBox1.Checked == false)
@@ -2836,20 +2938,20 @@ namespace AWC
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
-                MessageBox.Show("Awesome Windows Customizer\nДата сборки: 10.03.2024 20:00\nНомер сборки: 500.awcrelease\nВерсия AWC: 1.1 Release", "Awesome Windows Customizer - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Awesome Windows Customizer\nДата сборки: 09.05.2024 20:00\nНомер сборки: 750.awcrelease\nВерсия AWC: 1.2 Release", "Awesome Windows Customizer - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             if (Properties.Settings.Default.Lang == 2)
             {
-                MessageBox.Show("Awesome Windows Customizer\nBuild date: 10.03.2024 20:00\nBuild number: 500.awcrelease\nVersion of AWC: 1.1 Release", "Awesome Windows Customizer - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Awesome Windows Customizer\nBuild date: 09.05.2024 20:00\nBuild number: 650.awcrelease\nVersion of AWC: 1.2 Release", "Awesome Windows Customizer - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
 
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 DialogResult ExpReboot = MessageBox.Show("Вы точно хотите перезапустить проводник?", "Awesome Windows Customizer - Уверены?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (ExpReboot == DialogResult.Yes)
@@ -2877,13 +2979,13 @@ namespace AWC
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
-                MessageBox.Show("Вы изменили одну или несколько настроек, которые требуют перезагрузки системы для применения. С помощью кнопки выше, вы можете перезагрузить систему.", "Awesome Windows Customizer - Требуется перезагрузка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Вы изменили одну или несколько настроек, которые требуют перезагрузки системы для применения. С помощью кнопки выше, вы можете перезагрузить систему.\n\nВы можете отключить данное напоминание в настройках.", "Awesome Windows Customizer - Требуется перезагрузка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
-                MessageBox.Show("You have changed one or more settings that require a system reboot to take effect. Using the button above, you can reboot the system.", "Awesome Windows Customizer - Reboot required!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You have changed one or more settings that require a system reboot to take effect. Using the button above, you can reboot the system.\n\nYou can disable this reminder in the settings.", "Awesome Windows Customizer - Reboot required!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -2891,11 +2993,11 @@ namespace AWC
         {
             if (Properties.Settings.Default.Lang == 1)
             {
-                MessageBox.Show("Вы изменили одну или несколько настроек, которые требуют перезагрузки Проводника для применения. С помощью кнопки выше, вы можете перезагрузить Проводник.", "Awesome Windows Customizer - Требуется перезагрузка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Вы изменили одну или несколько настроек, которые требуют перезагрузки Проводника для применения. С помощью кнопки выше, вы можете перезагрузить Проводник.\n\nВы можете отключить данное напоминание в настройках.", "Awesome Windows Customizer - Требуется перезагрузка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
-                MessageBox.Show("You have changed one or more settings that require a restart of Explorer to take effect. Using the button above, you can restart Explorer.", "Awesome Windows Customizer - Explorer restart required!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You have changed one or more settings that require a restart of Explorer to take effect. Using the button above, you can restart Explorer.\n\nYou can disable this reminder in the settings.", "Awesome Windows Customizer - Explorer restart required!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -3279,7 +3381,7 @@ namespace AWC
         {
             if (Properties.Settings.Default.CatAct == true)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     MessageBox.Show("По какой то причине, иногда не получается активировать Windows с первой попытки.\nЕсли это произойдёт, нажимайте кнопку 'Активировать' до тех пор, пока не появится окно 'Активация выполнена успешно'.", "AWC - Обратите внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -3287,17 +3389,28 @@ namespace AWC
                 {
                     MessageBox.Show("For some reason, sometimes it is not possible to activate Windows on the first try.\nIf this happens, click the 'Activate' button until the 'Activation completed successfully' window appears.", "AWC - Please note!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
+
             }
             else if (Properties.Settings.Default.CatContext == true)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     MessageBox.Show("В этой вкладке вы можете скрыть ненужные параметры контекстного меню.", "AWC - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else if (Properties.Settings.Default.Lang == 2)
                 {
                     MessageBox.Show("In this tab you can hide unnecessary context menu options.", "AWC - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+            }
+            else if (Properties.Settings.Default.CatRec == true)
+            {
+                if (Properties.Settings.Default.Lang == 1)
+                {
+                    MessageBox.Show("В этой вкладке вы можете 'освежить' свою систему, воспользовавшись встроенными в Windows утилитами DISM и SFC, а также очистив временные файлы.", "AWC - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else if (Properties.Settings.Default.Lang == 2)
+                {
+                    MessageBox.Show("In this tab, you can 'refresh' your system by using the DISM and SFC utilities built into Windows, as well as by clearing temporary files.", "AWC - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
             }
         }
@@ -3342,7 +3455,7 @@ namespace AWC
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 0)
             {
                 this.BackgroundImage = Properties.Resources.Fram2e_1;
                 Properties.Settings.Default.Theme = 1;
@@ -3375,7 +3488,7 @@ namespace AWC
                 checkBox14.ForeColor = Color.FromArgb(0xFFFFFF);
                 pictureBox1.BackgroundImage = Properties.Resources.awcrainbow;
             }
-            else if(comboBox1.SelectedIndex == 1)
+            else if (comboBox1.SelectedIndex == 1)
             {
                 this.BackgroundImage = Properties.Resources.BW;
                 Properties.Settings.Default.Theme = 2;
@@ -3635,6 +3748,7 @@ namespace AWC
                 label1.Text = "Настройки программы";
                 label9.Text = "Тема";
                 button19.Text = "Сбросить все настройки";
+                checkBox7.Text = "Скрыть напоминание о необходимости перезагрузки";
             }
             else if (comboBox2.SelectedIndex == 1)
             {
@@ -3651,12 +3765,13 @@ namespace AWC
                 label1.Text = "App settings";
                 label9.Text = "Theme";
                 button19.Text = "Reset all settings";
+                checkBox7.Text = "Hide the reminder to reboot";
             }
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.Lang == 1)
+            if (Properties.Settings.Default.Lang == 1)
             {
                 DialogResult eraseall = MessageBox.Show("Вы уверены что хотите сбросить все настройки Awesome Windows Tweaker?\nНекоторые настройки не будут сброшены.", "AWC - Уверены?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (eraseall == DialogResult.Yes)
@@ -4201,9 +4316,9 @@ namespace AWC
                     Process.Start("cmd.exe", "/c \"powercfg /SETACVALUEINDEX SCHEME_CURRENT 7516b95f-f776-4464-8c53-06167f40cc99 3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e 600\"");
 
                     Registry.ClassesRoot.CreateSubKey(@"AllFilesystemObjects\shellex\ContextMenuHandlers\ModernSharing").SetValue("", "{e2bf9676-5f8f-435c-97eb-11607a5bedf7}");
-                    
 
-                    if(Properties.Settings.Default.Lang == 1)
+
+                    if (Properties.Settings.Default.Lang == 1)
                     {
                         DialogResult rest = MessageBox.Show("Для применения изменений необходимо перезагрузить компьютер. Хотите перезагрузиться сейчас?", "AWC - Нужна перезагрузка!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                         if (rest == DialogResult.Yes)
@@ -4229,14 +4344,14 @@ namespace AWC
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     MessageBox.Show("Интересный факт: изначально название программы звучало как 'Yet another Windows tweaker'. Об этом свидетельствуют название проекта в коде.\n\n :)", "YAWT - Интересный факт", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
@@ -4244,7 +4359,7 @@ namespace AWC
                 {
                     MessageBox.Show("Interesting fact: initially the name of the program sounded like 'Yet another Windows tweaker'. This is evidenced by the name of the project in the code.\n\n :)", "YAWT - Interesting fact", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
-                
+
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -4253,7 +4368,7 @@ namespace AWC
                 Sound.Start();
                 new Form2().ShowDialog();
             }
-          
+
         }
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
@@ -4274,32 +4389,32 @@ namespace AWC
 
         private void label13_Click(object sender, EventArgs e)
         {
-           
-            if(Properties.Settings.Default.Lang == 1)
+
+            if (Properties.Settings.Default.Lang == 1)
             {
-                Point buildLoc = new Point(237, 365);
+                Point buildLoc = new Point(239, 365);
                 label13.Location = buildLoc;
-                label13.Text = "Номер сборки: 500.awcrelease\nAwesomeLime // 2024";
+                label13.Text = "Номер сборки: 750.awcrelease\nAwesomeLime // 2024";
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
-                Point buildLoc = new Point(251, 365);
+                Point buildLoc = new Point(253, 365);
                 label13.Location = buildLoc;
-                label13.Text = "Build number: 500.awcrelease\nAwesomeLime // 2024";
+                label13.Text = "Build number: 750.awcrelease\nAwesomeLime // 2024";
             }
-            
+
         }
 
         private void checkBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
         }
 
         private void checkBox2_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right)
             {
-                 if (Properties.Settings.Default.CatExp == true)
+                if (Properties.Settings.Default.CatExp == true)
                 {
                     MessageBox.Show("", "AWC - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
@@ -4356,7 +4471,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4364,7 +4479,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatExp == true)
                     {
@@ -4410,7 +4525,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4418,7 +4533,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatExp == true)
                     {
@@ -4464,7 +4579,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-               
+
             }
         }
 
@@ -4472,7 +4587,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatExp == true)
                     {
@@ -4518,7 +4633,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4548,7 +4663,7 @@ namespace AWC
                     {
                         SystemSounds.Asterisk.Play();
                     }
-                }  
+                }
                 else if (Properties.Settings.Default.Lang == 2)
                 {
                     if (Properties.Settings.Default.CatExp == true)
@@ -4572,7 +4687,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-               
+
             }
         }
 
@@ -4580,7 +4695,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatWork == true)
                     {
@@ -4618,7 +4733,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4626,7 +4741,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatWork == true)
                     {
@@ -4643,6 +4758,10 @@ namespace AWC
                     else if (Properties.Settings.Default.CatContext == true)
                     {
                         SystemSounds.Asterisk.Play();
+                    }
+                    else if (Properties.Settings.Default.CatSet == true)
+                    {
+                        MessageBox.Show("Данная функция скрывает символ <!> под кнопками Перезагрузки и Перезагрузки проводника, который появляется при необходимости перезагрузки для применения определённого параметра.", "AWC - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 else if (Properties.Settings.Default.Lang == 2)
@@ -4663,8 +4782,12 @@ namespace AWC
                     {
                         SystemSounds.Asterisk.Play();
                     }
+                    else if (Properties.Settings.Default.CatSet == true)
+                    {
+                        MessageBox.Show("This function hides the <!> symbol under the Reboot and Reboot Explorer buttons, which appears when a reboot is required to apply a certain parameter.", "AWC - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
                 }
-                
+
             }
         }
 
@@ -4672,7 +4795,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatWork == true)
                     {
@@ -4690,7 +4813,7 @@ namespace AWC
                     {
                         SystemSounds.Asterisk.Play();
                     }
-                }    
+                }
                 else if (Properties.Settings.Default.Lang == 2)
                 {
                     if (Properties.Settings.Default.CatWork == true)
@@ -4710,7 +4833,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4718,7 +4841,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatWork == true)
                     {
@@ -4756,7 +4879,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4764,7 +4887,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-               if (Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatSec == true)
                     {
@@ -4779,7 +4902,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-               else if (Properties.Settings.Default.Lang == 2)
+                else if (Properties.Settings.Default.Lang == 2)
                 {
                     if (Properties.Settings.Default.CatSec == true)
                     {
@@ -4794,7 +4917,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-               
+
             }
         }
 
@@ -4802,7 +4925,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatEtc == true)
                     {
@@ -4824,7 +4947,7 @@ namespace AWC
                         SystemSounds.Asterisk.Play();
                     }
                 }
-                
+
             }
         }
 
@@ -4832,7 +4955,7 @@ namespace AWC
         {
             if (e.Button == MouseButtons.Right)
             {
-                if(Properties.Settings.Default.Lang == 1)
+                if (Properties.Settings.Default.Lang == 1)
                 {
                     if (Properties.Settings.Default.CatEtc == true)
                     {
@@ -4854,7 +4977,7 @@ namespace AWC
                         MessageBox.Show("Once disabled, this item cannot be turned back on!", "AWC - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
-               
+
             }
         }
 
@@ -4878,6 +5001,188 @@ namespace AWC
                     SystemSounds.Asterisk.Play();
                 }
             }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Lang == 1)
+            {
+                label1.Text = "Очистка и восстановление";
+                button21.Text = "Начать";
+                button22.Text = "Начать";
+                button23.Text = "Начать";
+                label3.Text = "Восстановление с помощью SFC";
+                label4.Text = "Восстановление с помощью DISM";
+                label5.Text = "Очистить временные файлы";
+                button21.Location = new Point(339, 95);
+                button22.Location = new Point(339, 64);
+                button23.Location = new Point(339, 126);
+            }
+            else if (Properties.Settings.Default.Lang == 2)
+            {
+                label1.Text = "System refresh";
+                button21.Text = "Begin  ";
+                button22.Text = "Begin  ";
+                button23.Text = "Begin  ";
+                label3.Text = "Refresh via SFC";
+                label4.Text = "Refresh via DISM";
+                label5.Text = "Clean temporary files";
+                button21.Location = new Point(263, 95);
+                button22.Location = new Point(263, 64);
+                button23.Location = new Point(263, 126);
+            }
+            Properties.Settings.Default.CatAboutPC = false;
+            Properties.Settings.Default.CatExp = false;
+            Properties.Settings.Default.CatWork = false;
+            Properties.Settings.Default.CatSec = false;
+            Properties.Settings.Default.CatEtc = false;
+            Properties.Settings.Default.CatAct = false;
+            Properties.Settings.Default.CatContext = false;
+            Properties.Settings.Default.CatSet = false;
+            Properties.Settings.Default.CatAbout = false;
+            Properties.Settings.Default.CatRec = true;
+            comboBox1.Visible = false;
+            comboBox2.Visible = false;
+            button19.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+            button20.Enabled = false;
+            label2.Visible = false;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            button13.Visible = false;
+            button14.Visible = false;
+            button15.Visible = false;
+            button16.Visible = false;
+            button17.Visible = false;
+            button18.Visible = false;
+            button21.Visible = true;
+            button22.Visible = true;
+            button23.Visible = true;
+            comboBox1.Visible = false;
+            label9.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            label11.Visible = false;
+            label13.Visible = false;
+            button12.Visible = true;
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Lang == 1)
+            {
+                string temp = Environment.GetEnvironmentVariable("temp");
+                DialogResult restoreD = MessageBox.Show($"Данная кнопка удалит все временные файлы, находящиеся по пути '{temp}'. Вы хотите продолжить?", "AWC - Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", $"/c rd {temp} /s /q");
+                }
+            }
+            if (Properties.Settings.Default.Lang == 2)
+            {
+                string temp = Environment.GetEnvironmentVariable("temp");
+                DialogResult restoreD = MessageBox.Show($"This button will delete all temporary files located on the path '{temp}'. Do you want to continue?", "AWC - Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", $"/c rd {temp} /s /q");
+                }
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Lang == 1)
+            {
+                DialogResult restoreD = MessageBox.Show("Данная кнопка запустит восстановление системы с помощью SFC. Это может занять 5-10 минут. Вы хотите продолжить?\n\nДополнительная информация: https://bit.ly/AWCRefresh", "AWC - Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", "/c sfc /scannow");
+                    Properties.Settings.Default.NeedReboot = true;
+                }
+            }
+            if (Properties.Settings.Default.Lang == 2)
+            {
+                DialogResult restoreD = MessageBox.Show("This button will launch a system restore using SFC. This may take 5-10 minutes. Do you want to continue?\n\nAdditional information: https://bit.ly/AWCRefresh", "AWC - Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", "/c sfc /scannow");
+                    Properties.Settings.Default.NeedReboot = true;
+                }
+
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Lang == 1)
+            {
+                DialogResult restoreD = MessageBox.Show("Данная кнопка запустит восстановление системы с помощью DISM. Это может занять 10-20 минут. Вы хотите продолжить?\n\nДополнительная информация: https://bit.ly/AWCRefresh", "AWC - Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", "/c dism /Online /Cleanup-Image /RestoreHealth");
+                    Properties.Settings.Default.NeedReboot = true;
+                }
+            }
+            if (Properties.Settings.Default.Lang == 2)
+            {
+                DialogResult restoreD = MessageBox.Show("This button will launch a system restore using DISM. This may take 10-20 minutes. Do you want to continue?\n\nAdditional information: https://bit.ly/AWCRefresh", "AWC - Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (restoreD == DialogResult.Yes)
+                {
+                    Process.Start("cmd.exe", "/c dism /Online /Cleanup-Image /RestoreHealth");
+                    Properties.Settings.Default.NeedReboot = true;
+                }
+
+            }
+        }
+
+        private void Reboot_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.NeedReboot == true)
+            {
+                restartReq.Visible = true;
+            }
+            if (Properties.Settings.Default.NeedExpReboot == true)
+            {
+                explorerReq.Visible = true;
+            }
+            if (Properties.Settings.Default.NeedExpReboot == false)
+            {
+                explorerReq.Visible = false;
+            }
+            if (Properties.Settings.Default.NeedReboot == false)
+            {
+                restartReq.Visible = false;
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://t.me/awesome_lime");
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
 }

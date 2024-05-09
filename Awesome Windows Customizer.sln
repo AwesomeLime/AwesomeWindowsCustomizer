@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome Windows Customizer", "Awesome Windows Customizer.csproj", "{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		For MrBaska|Any CPU = For MrBaska|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.For MrBaska|Any CPU.ActiveCfg = For MrBaska|Any CPU
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.For MrBaska|Any CPU.Build.0 = For MrBaska|Any CPU
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D7E4C7-4495-4EC3-90C3-4F364ECCD970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {006D953A-A3B3-4D4F-A5EB-3B225E82B8AA}
+	EndGlobalSection
+EndGlobal

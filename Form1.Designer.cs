@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button20 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -88,12 +89,18 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Sound = new System.Windows.Forms.Timer(this.components);
             this.label13 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.Reboot = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restartReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.explorerReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,6 +119,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.button20);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button4);
@@ -126,6 +134,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 456);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button20
+            // 
+            this.button20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button20.Image = global::AWC.Properties.Resources._106;
+            this.button20.Location = new System.Drawing.Point(123, 312);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 55);
+            this.button20.TabIndex = 13;
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // pictureBox1
             // 
@@ -153,7 +173,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Image = global::AWC.Properties.Resources.Help_2;
-            this.button4.Location = new System.Drawing.Point(123, 253);
+            this.button4.Location = new System.Drawing.Point(42, 253);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 55);
             this.button4.TabIndex = 7;
@@ -180,13 +200,11 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::AWC.Properties.Resources.Computer;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(42, 131);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 55);
+            this.button1.Size = new System.Drawing.Size(75, 55);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Об устройстве";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Text = " .";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -194,7 +212,7 @@
             // 
             this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.Image = global::AWC.Properties.Resources.Tasks;
-            this.button6.Location = new System.Drawing.Point(123, 314);
+            this.button6.Location = new System.Drawing.Point(123, 253);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 55);
             this.button6.TabIndex = 9;
@@ -205,7 +223,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Image = global::AWC.Properties.Resources.Explorer;
-            this.button2.Location = new System.Drawing.Point(42, 192);
+            this.button2.Location = new System.Drawing.Point(123, 131);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 55);
             this.button2.TabIndex = 4;
@@ -227,7 +245,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Image = global::AWC.Properties.Resources.Desktop;
-            this.button3.Location = new System.Drawing.Point(123, 192);
+            this.button3.Location = new System.Drawing.Point(42, 192);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 55);
             this.button3.TabIndex = 5;
@@ -238,7 +256,7 @@
             // 
             this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Image = global::AWC.Properties.Resources.Shield;
-            this.button5.Location = new System.Drawing.Point(42, 253);
+            this.button5.Location = new System.Drawing.Point(123, 192);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 55);
             this.button5.TabIndex = 6;
@@ -498,6 +516,10 @@
             this.button10.TabIndex = 17;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // Explorer
             // 
@@ -763,6 +785,7 @@
             // 
             // Theme
             // 
+            this.Theme.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.Theme.Name = "Theme";
             this.Theme.Size = new System.Drawing.Size(61, 4);
             this.Theme.Text = "Theme";
@@ -858,13 +881,77 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label13.Location = new System.Drawing.Point(251, 365);
+            this.label13.Location = new System.Drawing.Point(239, 365);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(313, 64);
+            this.label13.Size = new System.Drawing.Size(325, 64);
             this.label13.TabIndex = 44;
-            this.label13.Text = "Build number: 500.awcrelease\r\nAwesomeLime // 2024\r\n";
+            this.label13.Text = "Номер сборки: 750.awcrelease\r\nAwesomeLime // 2024\r\n";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // button21
+            // 
+            this.button21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(263, 95);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(83, 31);
+            this.button21.TabIndex = 46;
+            this.button21.Text = "Начать";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Visible = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(263, 64);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(83, 31);
+            this.button22.TabIndex = 45;
+            this.button22.Text = "Начать";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Visible = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(263, 126);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(83, 31);
+            this.button23.TabIndex = 47;
+            this.button23.Text = "Начать";
+            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Visible = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // Reboot
+            // 
+            this.Reboot.Enabled = true;
+            this.Reboot.Interval = 30;
+            this.Reboot.Tick += new System.EventHandler(this.Reboot_Tick);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::AWC.Properties.Resources.Telegram_2019_Logo_svg;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(99, 358);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(70, 72);
+            this.pictureBox4.TabIndex = 48;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Form1
             // 
@@ -874,8 +961,10 @@
             this.BackgroundImage = global::AWC.Properties.Resources.Fram2e_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button22);
             this.Controls.Add(this.explorerReq);
             this.Controls.Add(this.restartReq);
             this.Controls.Add(this.button12);
@@ -890,33 +979,35 @@
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.button17);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label4);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -933,6 +1024,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.explorerReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -998,6 +1090,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer Sound;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Timer Reboot;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 
