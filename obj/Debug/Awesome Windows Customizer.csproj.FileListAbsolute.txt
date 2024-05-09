@@ -9,3 +9,11 @@ D:\Visual Studio\AWC\Debug\Awesome Windows Customizer.exe
 D:\Visual Studio\AWC\Debug\Awesome Windows Customizer.pdb
 C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.exe
 C:\Users\MrNikitori\source\repos\yawt\Yet another Windows tweaker\obj\Debug\Awesome Windows Customizer.pdb
+D:\Visual Studio\AWC\obj\Debug\Awesome Windows Customizer.csproj.AssemblyReference.cache
+D:\Visual Studio\AWC\obj\Debug\AWC.Form1.resources
+D:\Visual Studio\AWC\obj\Debug\AWC.Form2.resources
+D:\Visual Studio\AWC\obj\Debug\AWC.Properties.Resources.resources
+D:\Visual Studio\AWC\obj\Debug\Awesome Windows Customizer.csproj.GenerateResource.cache
+D:\Visual Studio\AWC\obj\Debug\Awesome Windows Customizer.csproj.CoreCompileInputs.cache
+D:\Visual Studio\AWC\obj\Debug\Awesome Windows Customizer.exe
+D:\Visual Studio\AWC\obj\Debug\Awesome Windows Customizer.pdb
