@@ -814,5 +814,41 @@ namespace AWC.Properties {
                 this["Lang"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CatRec {
+            get {
+                return ((bool)(this["CatRec"]));
+            }
+            set {
+                this["CatRec"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool RebootEnabled {
+            get {
+                return ((bool)(this["RebootEnabled"]));
+            }
+            set {
+                this["RebootEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CBS {
+            get {
+                return ((bool)(this["CBS"]));
+            }
+            set {
+                this["CBS"] = value;
+            }
+        }
     }
 }

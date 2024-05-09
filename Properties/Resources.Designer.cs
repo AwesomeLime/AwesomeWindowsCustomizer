@@ -73,6 +73,26 @@ namespace AWC.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _106 {
+            get {
+                object obj = ResourceManager.GetObject("106", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _23 {
+            get {
+                object obj = ResourceManager.GetObject("23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap awc_logo {
             get {
                 object obj = ResourceManager.GetObject("awc logo", resourceCulture);
@@ -375,6 +395,16 @@ namespace AWC.Properties {
         internal static System.Drawing.Bitmap Tasks {
             get {
                 object obj = ResourceManager.GetObject("Tasks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telegram_2019_Logo_svg {
+            get {
+                object obj = ResourceManager.GetObject("Telegram_2019_Logo.svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
