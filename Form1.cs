@@ -1331,14 +1331,14 @@ namespace AWC
             {
                 label1.Text = "О программе";
                 label11.Text = "Небольшая программа с открытым исходным кодом, \r\nкоторая позволяет настроить Windows под себя\r\nеё же стандартными средствами!\r\n";
-                label13.Text = "Версия 1.2 Release\nAwesomeLime // 2024";
+                label13.Text = "Версия 1.2.1 Release\nAwesomeLime // 2024";
 
             }
             if (Properties.Settings.Default.Lang == 2)
             {
                 label1.Text = "About";
                 label11.Text = "A small open source program, which allows you to \ncustomize Windows for yourself its standard tools!";
-                label13.Text = "Version 1.2 Release\nAwesomeLime // 2024";
+                label13.Text = "Version 1.2.1 Release\nAwesomeLime // 2024";
 
             }
             Point newLocation = new Point(326, 365);
@@ -2940,11 +2940,11 @@ namespace AWC
         {
             if (Properties.Settings.Default.Lang == 1)
             {
-                MessageBox.Show("Awesome Windows Customizer\nДата сборки: 09.05.2024 20:00\nНомер сборки: 750.awcrelease\nВерсия AWC: 1.2 Release", "Awesome Windows Customizer - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Awesome Windows Customizer\nДата сборки: 19.05.2024 15:15\nНомер сборки: 775.awcrelease\nВерсия AWC: 1.2.1 Release", "Awesome Windows Customizer - Информация", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             if (Properties.Settings.Default.Lang == 2)
             {
-                MessageBox.Show("Awesome Windows Customizer\nBuild date: 09.05.2024 20:00\nBuild number: 650.awcrelease\nVersion of AWC: 1.2 Release", "Awesome Windows Customizer - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Awesome Windows Customizer\nBuild date: 19.05.2024 15:15\nBuild number: 775.awcrelease\nVersion of AWC: 1.2.1 Release", "Awesome Windows Customizer - Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
 
         }
@@ -4392,15 +4392,15 @@ namespace AWC
 
             if (Properties.Settings.Default.Lang == 1)
             {
-                Point buildLoc = new Point(239, 365);
+                Point buildLoc = new Point(241, 365);
                 label13.Location = buildLoc;
-                label13.Text = "Номер сборки: 750.awcrelease\nAwesomeLime // 2024";
+                label13.Text = "Номер сборки: 775.awcrelease\nAwesomeLime // 2024";
             }
             else if (Properties.Settings.Default.Lang == 2)
             {
-                Point buildLoc = new Point(253, 365);
+                Point buildLoc = new Point(255, 365);
                 label13.Location = buildLoc;
-                label13.Text = "Build number: 750.awcrelease\nAwesomeLime // 2024";
+                label13.Text = "Build number: 775.awcrelease\nAwesomeLime // 2024";
             }
 
         }

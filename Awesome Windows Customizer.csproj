@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>tweaker-lol %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>tweaker-lol.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -187,6 +187,12 @@
     <None Include="Resources\23.png" />
     <None Include="Resources\Telegram_2019_Logo.svg.png" />
     <None Include="Resources\Union.png" />
+    <None Include="Resources\awc logo1.png" />
+    <None Include="Resources\awc logo v2.png" />
+    <None Include="Resources\awc logo v21.png" />
+    <None Include="Resources\tweaker icon v21.png" />
+    <None Include="Resources\tweaker icon v2.png" />
+    <None Include="Resources\tweaker icon v22.png" />
     <Content Include="tweaker-lol %281%29.ico" />
     <Content Include="Union %281%29.ico" />
     <None Include="Resources\Union1.png" />

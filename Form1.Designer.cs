@@ -149,7 +149,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::AWC.Properties.Resources.Union1;
+            this.pictureBox1.BackgroundImage = global::AWC.Properties.Resources.tweaker_icon_v2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(67, 19);
             this.pictureBox1.Name = "pictureBox1";
@@ -832,11 +832,11 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::AWC.Properties.Resources.awc_logo;
+            this.pictureBox2.BackgroundImage = global::AWC.Properties.Resources.awc_logo_v21;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(24, 69);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(529, 116);
+            this.pictureBox2.Size = new System.Drawing.Size(529, 125);
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
@@ -848,7 +848,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(29, 197);
+            this.label11.Location = new System.Drawing.Point(29, 202);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(523, 90);
             this.label11.TabIndex = 41;
@@ -997,8 +997,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox5);
@@ -1006,8 +1004,10 @@
             this.Controls.Add(this.button19);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label8);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
